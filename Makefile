@@ -8,8 +8,8 @@ CFLAGS = -std=c++17
 LDFLAGS = -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 FILENAME = .output
 
-compile: main.cpp
-	g++ $(CFLAGS) -o $(FILENAME) main.cpp $(LDFLAGS)
+compile: src/main.cpp
+	g++ $(CFLAGS) -o $(FILENAME) src/main.cpp $(LDFLAGS)
 
 .PHONY: test clean
 
